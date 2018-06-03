@@ -1,0 +1,210 @@
+.home-grid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50vh);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    margin: 0 5rem;
+
+    color: var(--main-red-col);
+}
+
+.heading-box-1 {
+    text-align: center;
+}
+
+.heading-box-4 {
+    text-align: left;
+}
+
+.heading-box-1 h1, .heading-box-4 h1{
+    cursor: pointer;
+}
+
+.heading {
+    text-shadow: -1rem -1rem 0 var(--first-pink-col);
+    font-size: 15rem;
+    font-family: var(--main-font);
+}
+
+.heading-box-2 {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: center;
+        justify-self: center;
+}
+
+.heading-box-3 {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+}
+
+.sub-box {
+    width: 20vw;
+    height: 20vh;
+
+    margin: 2rem auto;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    font-family: var(--second-font);
+    font-size: 5.8rem;
+}
+
+.sub-box a {
+    margin-bottom: 1.2rem;
+
+    color: var(--second-pink-col);
+    text-decoration: none;
+    text-shadow: 0.5rem 0.5rem 0 var(--first-pink-col), -1px -1px 0 var(--first-brown-red-col);
+}
+
+.sub-box a:hover {
+    color: var(--first-blue-col);
+
+    text-shadow: 0.5rem 0.5rem 0 var(--second-blue-col), -1px -1px 0 var(--third-blue-col);
+    font-size: 6.2rem;
+
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.line {
+    height: 0.5rem;
+    width: 80vh;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) rotate(-45deg);
+        -ms-transform: translateX(-50%) rotate(-45deg);
+            transform: translateX(-50%) rotate(-45deg);
+
+    background: var(--main-red-col);
+    border: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .line {
+        -webkit-transform: translateX(-50%) rotate(-52deg);
+            -ms-transform: translateX(-50%) rotate(-52deg);
+                transform: translateX(-50%) rotate(-52deg);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .heading {
+        font-size: 12rem;
+    }
+
+    .sub-box {
+        font-size: 4rem;
+    }
+
+    .sub-box a:hover {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .heading {
+        font-size: 10rem;
+    }
+
+    .sub-box a:hover {
+        font-size: 4.25rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .heading {
+        font-size: 8rem;
+    }
+
+    .sub-box {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .heading {
+        font-size: 6rem;
+    }
+
+    .sub-box {
+        font-size: 2.5rem;
+    }
+
+    .sub-box a:hover {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .line {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    .heading {
+        font-size: 11rem;
+    }
+    .sub-box {
+        font-size: 5.4rem;
+    }
+    .sub-box a:hover {
+        font-size: 5.6rem;
+    }
+    a[href^="/about"] {
+        -webkit-transform: translate(-5rem, 20rem);
+            -ms-transform: translate(-5rem, 20rem);
+                transform: translate(-5rem, 20rem);
+    }
+}
+
+@media screen and (max-height: 200px) {
+    .heading {
+        font-size: 3.2rem;
+    }
+    .sub-box {
+        font-size: 1.4rem;
+    }
+    .sub-box a:hover {
+        font-size: 1.6rem;
+    }
+    a[href^="/about"] {
+        -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+                transform: translate(0, 0);
+        position: absolute;
+        top: 25%;
+        right: 42.5%;
+    }
+}

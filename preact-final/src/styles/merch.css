@@ -1,0 +1,63 @@
+.art-box {
+    cursor: pointer;
+
+    width: 25%;
+    height: 50vh;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    margin-left: 0.5rem;
+
+    color: white;
+    font-family: var(--third-font);
+}
+
+.art-title {
+    font-size: 2.5rem;
+}
+
+.art-price {
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1300px) {
+    .art-box {
+        margin-left: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .art-box {
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .art-box {
+        margin-left: 10rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .art-box {
+        margin-left: 12.5rem;
+    }
+
+    .lesser-heading {
+        font-size: 8rem;
+    }
+}

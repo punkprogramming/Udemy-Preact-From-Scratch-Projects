@@ -1,0 +1,59 @@
+:root {
+    --main-red-col: rgba(237, 28, 125, 1);
+    --first-pink-col: rgba(255, 0, 180, 0.5);
+    --second-pink-col: rgba(247, 66, 150, 0.8);
+    --first-brown-red-col: rgba(156, 45, 45, 0.95);
+    --first-blue-col: rgba(66, 150, 247, 0.85);
+    --second-blue-col: rgba(0, 180, 255, 0.5);
+    --third-blue-col: rgba(45, 45, 156, 0.95);
+    --main-font: "Monoton", sans-serif;
+    --second-font: "Permanent Marker", sans-serif;
+    --third-font: "Bangers", sans-serif;
+    --adjust-bangers-spacing: 0.25rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    font-size: 62.5%;
+    font-weight: 400;
+    line-height: 1.6;
+    min-height: 100vh;
+
+    background: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.lesser-container {
+    margin-left: 2.5rem;
+}
+
+.lesser-heading {
+    color: var(--main-red-col);
+    font-size: 10rem;
+    font-family: var(--main-font);
+}
+
+.lesser-line {
+    height: 0.5rem;
+    width: 75vw;
+    margin-bottom: 7.5rem;
+
+    background: var(--main-red-col);
+    border: none;
+}
+
+
+
